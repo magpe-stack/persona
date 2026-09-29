@@ -1,5 +1,5 @@
 # Persona
-O **Persona** é um aplicativo para ajudar escritores a criar personagens mais completos, interessantes e humanos.
+O **Persona** é um aplicativo PWA instalável que ajuda escritores a criar personagens mais completos, interessantes e humanos.
 
 Ele funciona como um caderno de criação. Em vez de deixar o autor olhando para uma página em branco, o aplicativo apresenta perguntas importantes sobre cada personagem.
 
