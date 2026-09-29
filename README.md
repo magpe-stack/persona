@@ -5,6 +5,12 @@ Ele funciona como um caderno de criação. Em vez de deixar o autor olhando para
 
 Você pode usar o Persona para criar personagens principais, vilões, coadjuvantes, narradores, figuras históricas, personagens de romances, contos, peças, roteiros e histórias em quadrinhos.
 
+## Acessar o Persona
+
+**[Abrir o Persona](https://magpe-stack.github.io/persona/)**
+
+Abra esse link no navegador para começar a criar suas fichas. Não é necessário entrar no GitHub ou instalar outro programa.
+
 ---
 
 ## O que é um PWA?
@@ -16,13 +22,9 @@ Em palavras simples, um PWA é um site que pode se comportar quase como um aplic
 Com o Persona, isso significa que você pode:
 
 - Abrir o aplicativo pelo navegador.
-
 - Adicionar o Persona à tela inicial do celular.
-
 - Usar o aplicativo em uma janela própria, sem a aparência comum do navegador.
-
 - Continuar trabalhando mesmo quando estiver sem internet, depois que o aplicativo já tiver sido aberto e carregado.
-
 - Salvar as fichas no próprio dispositivo.
 
 O Persona não precisa de uma conta, senha ou servidor para funcionar. Isso também significa que os personagens ficam salvos no navegador e no dispositivo em que foram criados.
@@ -36,7 +38,7 @@ O Persona não precisa de uma conta, senha ou servidor para funcionar. Isso tamb
 O projeto possui três arquivos principais:
 
 | Arquivo | Para que serve |
-| --- | --- |
+|---|---|
 | `index.html` | Contém a tela, os campos, os estilos e o funcionamento do aplicativo. |
 | `manifest.json` | Informa ao celular e ao navegador que o site pode ser instalado como aplicativo. |
 | `sw.js` | É o service worker. Ele ajuda o aplicativo a funcionar offline e guarda os arquivos principais em cache. |
@@ -52,13 +54,9 @@ O Persona já estará pronto quando o escritor receber o link. Para começar, el
 O escritor não precisa:
 
 - Ter uma conta no GitHub.
-
 - Entrar no GitHub.
-
 - Saber programar.
-
 - Baixar `index.html`, `manifest.json` ou `sw.js`.
-
 - Fazer qualquer configuração técnica.
 
 Ele pode usar o Persona diretamente no navegador. Se quiser, também pode adicioná-lo à tela inicial e abrir como um aplicativo.
@@ -68,28 +66,20 @@ Ele pode usar o Persona diretamente no navegador. Se quiser, também pode adicio
 ### Android
 
 1. Abra o endereço do Persona no Chrome.
-
-1. Espere a página carregar completamente.
-
-1. Toque nos três pontinhos do navegador.
-
-1. Escolha **Adicionar à tela inicial** ou **Instalar aplicativo**.
-
-1. Confirme.
+2. Espere a página carregar completamente.
+3. Toque nos três pontinhos do navegador.
+4. Escolha **Adicionar à tela inicial** ou **Instalar aplicativo**.
+5. Confirme.
 
 O ícone do Persona aparecerá na tela inicial do celular.
 
 ### iPhone ou iPad
 
 1. Abra o endereço do Persona no Safari.
-
-1. Toque no botão de compartilhar.
-
-1. Escolha **Adicionar à Tela de Início**.
-
-1. Confirme o nome Persona.
-
-1. Toque em **Adicionar**.
+2. Toque no botão de compartilhar.
+3. Escolha **Adicionar à Tela de Início**.
+4. Confirme o nome Persona.
+5. Toque em **Adicionar**.
 
 No iPhone, a instalação precisa ser feita pelo Safari.
 
@@ -98,12 +88,9 @@ No iPhone, a instalação precisa ser feita pelo Safari.
 Em navegadores compatíveis, como Chrome ou Edge:
 
 1. Abra o endereço do Persona.
-
-1. Procure o ícone de instalação na barra de endereço.
-
-1. Clique em **Instalar Persona**.
-
-1. Confirme.
+2. Procure o ícone de instalação na barra de endereço.
+3. Clique em **Instalar Persona**.
+4. Confirme.
 
 O aplicativo poderá abrir em uma janela própria.
 
@@ -120,20 +107,13 @@ Comece pelo nome. Se ainda não souber o nome definitivo, escreva um nome provis
 O aplicativo apresenta oito etapas:
 
 1. **Identidade e papel narrativo**
-
-1. **Aparência e presença**
-
-1. **Passado e feridas**
-
-1. **Desejo, necessidade e medo**
-
-1. **Valores, contradições e voz**
-
-1. **Conflitos e relações**
-
-1. **Arco de transformação**
-
-1. **Cenas, hábitos e detalhes memoráveis**
+2. **Aparência e presença**
+3. **Passado e feridas**
+4. **Desejo, necessidade e medo**
+5. **Valores, contradições e voz**
+6. **Conflitos e relações**
+7. **Arco de transformação**
+8. **Cenas, hábitos e detalhes memoráveis**
 
 ### 2. Leia o bloco de teoria
 
@@ -144,11 +124,8 @@ Clique nessa área para ler uma explicação sobre o campo.
 A explicação mostra:
 
 - O que você deve observar.
-
 - Que tipo de resposta pode escrever.
-
 - Como aquela informação ajuda a personagem.
-
 - Como transformar uma ideia vaga em algo concreto.
 
 Você não precisa preencher tudo de uma vez. Pode escrever uma primeira versão e voltar depois para melhorar.
@@ -157,7 +134,7 @@ Você não precisa preencher tudo de uma vez. Pode escrever uma primeira versão
 
 Evite responder somente com palavras soltas, como:
 
-```
+```text
 Triste.
 Inteligente.
 Corajosa.
@@ -165,7 +142,7 @@ Corajosa.
 
 Tente mostrar essas características por meio de situações:
 
-```
+```text
 Ela é inteligente, mas usa o conhecimento para evitar conversas sobre seus sentimentos.
 ```
 
@@ -216,11 +193,8 @@ Clique em **Duplicar** quando quiser criar uma nova ficha aproveitando ideias de
 Isso é útil para:
 
 - Criar versões alternativas da mesma personagem.
-
 - Testar uma mudança no passado.
-
 - Criar um irmão ou irmã com características parecidas.
-
 - Comparar dois caminhos possíveis para o arco narrativo.
 
 A cópia recebe o nome com a indicação `— cópia`. Você pode alterar o nome depois.
@@ -236,27 +210,18 @@ Antes de apagar um personagem importante, exporte uma cópia em `.doc`.
 ## Como exportar um personagem
 
 1. Abra a ficha do personagem desejado.
-
-1. Clique em **Exportar .doc**.
-
-1. O navegador fará o download do arquivo.
-
-1. Abra o arquivo no Microsoft Word, LibreOffice Writer, Google Docs ou outro editor compatível.
+2. Clique em **Exportar .doc**.
+3. O navegador fará o download do arquivo.
+4. Abra o arquivo no Microsoft Word, LibreOffice Writer, Google Docs ou outro editor compatível.
 
 O documento exportado inclui:
 
 - Nome do personagem.
-
 - Projeto literário.
-
 - Nome do autor ou autora.
-
 - Data da última atualização.
-
 - Todas as etapas da ficha.
-
 - Todas as respostas escritas.
-
 - A teoria de cada campo.
 
 O formato `.doc` é usado para facilitar a abertura em programas de texto. Dependendo do editor utilizado, talvez seja possível salvar o documento novamente como `.docx`.
@@ -270,15 +235,10 @@ O formato `.doc` é usado para facilitar a abertura em programas de texto. Depen
 O Persona foi criado para salvar os dados no navegador. Por isso, siga estas recomendações:
 
 - Exporte personagens importantes regularmente.
-
 - Guarde os arquivos `.doc` em uma pasta segura.
-
 - Faça cópias em um pendrive, serviço de nuvem ou disco externo.
-
 - Evite usar o modo anônimo ou privado do navegador para escrever.
-
 - Não apague os dados do site sem fazer uma cópia antes.
-
 - Se trocar de celular ou computador, leve os arquivos exportados.
 
 O Persona não sincroniza automaticamente os personagens entre aparelhos.
@@ -291,7 +251,7 @@ Uma personagem forte não precisa ser perfeita. Ela precisa parecer capaz de esc
 
 Ao responder os campos, tente construir uma cadeia de causa e efeito:
 
-```
+```text
 O que aconteceu com ela?
 ↓
 O que ela passou a acreditar?
@@ -314,19 +274,12 @@ A ideia é começar com uma informação pequena e ir aumentando o nível de det
 No aplicativo, você começa pelo núcleo da personagem e depois amplia:
 
 - Nome e papel.
-
 - Aparência e presença.
-
 - Passado.
-
 - Desejos e medos.
-
 - Voz e contradições.
-
 - Relações.
-
 - Transformação.
-
 - Hábitos e cenas.
 
 Você não precisa saber tudo no primeiro dia. Uma boa ficha pode crescer junto com a história.
@@ -340,7 +293,6 @@ A **necessidade** é aquilo que ela precisa compreender ou mudar para se tornar 
 Por exemplo:
 
 - Desejo: recuperar o cargo perdido.
-
 - Necessidade: reconhecer que seu orgulho destruiu os relacionamentos.
 
 O conflito aparece quando conseguir o desejo exige enfrentar a necessidade.
@@ -375,7 +327,7 @@ As contradições criam profundidade.
 
 Em vez de escrever “ele é nervoso”, escreva:
 
-```
+```text
 Ele alinha os objetos da mesa sempre que alguém faz uma pergunta difícil.
 ```
 
@@ -398,13 +350,9 @@ Também dê a ela humor, prazer, curiosidade, talento, amizade e momentos de des
 Se você não souber se a ficha está funcionando, escreva uma cena curta:
 
 - Coloque a personagem em uma sala.
-
 - Dê a ela um objetivo.
-
 - Coloque um obstáculo.
-
 - Faça outra pessoa pressioná-la.
-
 - Observe o que ela faz quando não pode simplesmente explicar seus sentimentos.
 
 ---
@@ -440,11 +388,8 @@ Nem todo navegador mostra o botão de instalação imediatamente.
 Verifique se:
 
 - O site está sendo acessado por HTTPS.
-
 - Os arquivos `manifest.json` e `sw.js` estão na mesma pasta do `index.html`.
-
 - O navegador é compatível com PWAs.
-
 - Você já abriu o site pelo menos uma vez.
 
 No GitHub Pages, o endereço normalmente começa com `https://`, o que atende a uma das exigências do PWA.
@@ -455,7 +400,7 @@ Abra o Persona com internet, aguarde a página carregar e atualize uma vez. Depo
 
 Também confirme se o arquivo se chama exatamente:
 
-```
+```text
 sw.js
 ```
 
@@ -470,11 +415,8 @@ Por isso, mantenha as exportações `.doc` como cópias de segurança.
 Tente abrir o arquivo com:
 
 - Microsoft Word.
-
 - LibreOffice Writer.
-
 - Google Docs, fazendo upload do arquivo.
-
 - Outro editor que aceite documentos HTML ou `.doc`.
 
 Se necessário, abra o documento e salve uma nova cópia como `.docx`.
@@ -488,15 +430,10 @@ Você pode adaptar o Persona para o seu projeto, sua oficina de escrita ou sua c
 Também pode:
 
 - Alterar as perguntas.
-
 - Criar novas etapas.
-
 - Mudar as cores.
-
 - Trocar o nome do aplicativo.
-
 - Adicionar novos formatos de exportação.
-
 - Criar versões específicas para roteiros, jogos ou histórias infantis.
 
 Antes de modificar os arquivos, faça uma cópia de segurança da versão que está funcionando.
