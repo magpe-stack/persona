@@ -1,0 +1,22 @@
+{
+  "short_name": "Persona",
+  "name": "Persona — Criador de Personagens Literários",
+  "description": "Aplicativo PWA para criação e sintetização de personagens literários integrando múltiplos métodos narrativos.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "display": "standalone",
+  "orientation": "portrait"
+}
