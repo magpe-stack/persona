@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persona — Criador de Personagens</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <!-- Biblioteca para exportação em formato DOCX nativo -->
+  <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <h1>Persona</h1>
+        <span>Sintetizador de Personagens Literários</span>
+      </div>
+      <div class="header-actions">
+        <button id="btn-export-docx" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Exportar para .DOCX
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <form id="character-form">
+        <!-- SEÇÃO 1: DADOS BÁSICOS (SUPERFÍCIE DO ICEBERG) -->
+        <section class="card">
+          <h2>1. Dados Básicos & Superfície</h2>
+          <p class="section-desc">O que o leitor observa de imediato na superfície do personagem.</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="char-name">Nome do Personagem</label>
+              <input type="text" id="char-name" placeholder="Ex: Lucas Mendes">
+            </div>
+            <div class="form-group">
+              <label for="char-role">Papel Narrativo</label>
+              <select id="char-role">
+                <option value="Protagonista">Protagonista</option>
+                <option value="Antagonista">Antagonista</option>
+                <option value="Coadjuvante / Tritagonista">Coadjuvante / Tritagonista</option>
+                <option value="Mentor">Mentor</option>
+                <option value="Personagem Foil (Contraponto)">Personagem Foil (Contraponto)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-archetype">Arquétipo Principal (Jung / Eneagrama)</label>
+              <input type="text" id="char-archetype" placeholder="Ex: O Rebelde, Tipo 8 no Eneagrama">
+            </div>
+            <div class="form-group">
+              <label for="char-age">Idade e Ocupação</label>
+              <input type="text" id="char-age" placeholder="Ex: 34 anos, Jornalista Investigativo">
+            </div>
+            <div class="form-group full-width">
+              <label for="char-appearance">Aparência Física & Linguagem Corporal</label>
+              <textarea id="char-appearance" rows="3" placeholder="Traços marcantes, postura, tiques sexuais ou gestual característico..."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 2: O NÚCLEO DRAMÁTICO (MÉTODO WANTS, NEEDS & LIES) -->
+        <section class="card highlight-card">
+          <h2>2. Núcleo Dramático (Querer vs. Precisar vs. Mentira)</h2>
+          <p class="section-desc">A força motriz psicológica que gera o arco de transformação do personagem.</p>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="char-lie">A Mentira (The Lie)</label>
+              <textarea id="char-lie" rows="2" placeholder="Em qual crença falsa ele acredita? (Ex: 'Preciso ter o controle de tudo para não ser magoado')"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="char-want">O Querer (Objetivo Externo)</label>
+              <textarea id="char-want" rows="2" placeholder="O que ele deseja alcançar tangivelmente na história?"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="char-need">A Necessidade (Verdade Interna)</label>
+              <textarea id="char-need" rows="2" placeholder="O que ele precisa aprender/aceitar para evoluir emocionalmente?"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 3: O ICEBERG DE HEMINGWAY (CAMADAS SUBMERSAS) -->
+        <section class="card">
+          <h2>3. Camadas Submersas (Método do Iceberg de Hemingway)</h2>
+          <p class="section-desc">Detalhes que moldam as atitudes do personagem, mas que nem sempre aparecem explicitamente no texto.</p>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="char-ghost">O Fantasma do Passado / Trauma</label>
+              <textarea id="char-ghost" rows="2" placeholder="O evento marcante do passado que originou a Mentira do personagem."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="char-secret">Maior Segredo</label>
+              <textarea id="char-secret" rows="2" placeholder="O que ele esconde a todo custo de todos?"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="char-fear">Medo Primordial</label>
+              <textarea id="char-fear" rows="2" placeholder="O que o paralisa ou o faz tomar atitudes impensadas?"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 4: RESPOSTA SOB PRESSÃO & DILEMAS (MÉTODO MCKEE) -->
+        <section class="card">
+          <h2>4. Ação Sob Pressão & Mecanismos de Defesa</h2>
+          <p class="section-desc">A verdadeira personalidade revelada nos momentos de crise.</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="char-defense">Mecanismo de Defesa Habitual</label>
+              <select id="char-defense">
+                <option value="Sarcasmo e Humor">Sarcasmo e Humor</option>
+                <option value="Agressividade e Ataque">Agressividade e Ataque</option>
+                <option value="Isolamento e Paralisia">Isolamento e Paralisia</option>
+                <option value="Racionalização Excessiva">Racionalização Excessiva</option>
+                <option value="Negação e Otimismo Falso">Negação e Otimismo Falso</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="char-voice">Voz, Idioleto e Padrões de Fala</label>
+              <input type="text" id="char-voice" placeholder="Ex: Fala pausada, usa gírias dos anos 90, evita palavrões">
+            </div>
+            <div class="form-group full-width">
+              <label for="char-dilemma">O Grande Dilema Moral do Personagem</label>
+              <textarea id="char-dilemma" rows="2" placeholder="Descreva a escolha impossível que ele será forçado a fazer durante o clímax."></textarea>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="app-footer">
+      <p>Persona — Ferramenta de Criação Literária</p>
+      <button id="btn-export-docx-footer" class="btn btn-primary">
+        Exportar para .DOCX
+      </button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
